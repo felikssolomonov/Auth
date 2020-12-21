@@ -1,11 +1,11 @@
-import React, {useState} from 'react';
-import {Text, View} from 'react-native';
-import InputStars from './InputStars';
-import KeyboardButton, {ButtonType} from './KeyboardButton';
+import React, { useState } from "react";
+import { Text, View } from "react-native";
+import InputStars from "./InputStars";
+import KeyboardButton, { ButtonType } from "./KeyboardButton";
 
 export enum Status {
-  choose = 'choose',
-  enter = 'enter',
+  choose = "choose",
+  enter = "enter",
 }
 
 interface Props {
@@ -14,15 +14,15 @@ interface Props {
   pin: string;
 }
 
-const VirtualKeyboard = ({endEnterProcess, pinCodeStatus, pin}: Props) => {
+const VirtualKeyboard = ({ endEnterProcess, pinCodeStatus, pin }: Props) => {
   const buttons = [
-    ['1', '2', '3'],
-    ['4', '5', '6'],
-    ['7', '8', '9'],
-    ['ID', '0', '⇦'],
+    ["1", "2", "3"],
+    ["4", "5", "6"],
+    ["7", "8", "9"],
+    ["ID", "0", "⇦"],
   ];
-  const [pinCode, setPinCode] = useState('');
-  const [pinCodeConfirm, setPinCodeConfirm] = useState('');
+  const [pinCode, setPinCode] = useState("");
+  const [pinCodeConfirm, setPinCodeConfirm] = useState("");
   const [confirm, setConfirm] = useState(false);
   const pinCodeChange = (value: string) => {
     if (confirm) {
@@ -39,8 +39,8 @@ const VirtualKeyboard = ({endEnterProcess, pinCodeStatus, pin}: Props) => {
             endEnterProcess(value);
           } else {
             setConfirm(false);
-            setPinCode('');
-            setPinCodeConfirm('');
+            setPinCode("");
+            setPinCodeConfirm("");
           }
         }, 400);
       } else if (pinCodeStatus === Status.enter) {
@@ -49,7 +49,7 @@ const VirtualKeyboard = ({endEnterProcess, pinCodeStatus, pin}: Props) => {
           if (match) {
             endEnterProcess(value);
           } else {
-            setPinCode('');
+            setPinCode("");
           }
         }, 400);
       } else {
@@ -63,47 +63,51 @@ const VirtualKeyboard = ({endEnterProcess, pinCodeStatus, pin}: Props) => {
     <View
       style={{
         flex: 1,
-        flexDirection: 'column',
-        justifyContent: 'flex-end',
+        flexDirection: "column",
+        justifyContent: "flex-end",
         marginBottom: 100,
-      }}>
+      }}
+    >
       <Text
         style={{
           fontSize: 20,
-          textAlign: 'center',
+          textAlign: "center",
           margin: 10,
           marginTop: 20,
-        }}>
+        }}
+      >
         {pinCode}
       </Text>
       <Text
         style={{
           fontSize: 20,
-          textAlign: 'center',
+          textAlign: "center",
           margin: 10,
           marginTop: 20,
-        }}>
+        }}
+      >
         {pinCodeConfirm}
       </Text>
       <InputStars value={confirm ? pinCodeConfirm : pinCode} />
       {buttons.map((item, i) => {
         return (
           <View
-            key={item + '_' + i}
+            key={item + "_" + i}
             style={{
-              flexDirection: 'row',
-              alignSelf: 'center',
-            }}>
+              flexDirection: "row",
+              alignSelf: "center",
+            }}
+          >
             {item.map((subItem, sI) => {
               const btnType =
-                subItem === 'ID'
+                subItem === "ID"
                   ? ButtonType.touchID
-                  : subItem === '⇦'
+                  : subItem === "⇦"
                   ? ButtonType.remove
                   : ButtonType.number;
               return (
                 <KeyboardButton
-                  key={item + '_' + i + '_' + sI}
+                  key={item + "_" + i + "_" + sI}
                   type={btnType}
                   value={subItem}
                   pinCode={confirm ? pinCodeConfirm : pinCode}
