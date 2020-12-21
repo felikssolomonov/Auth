@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Auth.iml" filepath="$PROJECT_DIR$/Auth.iml" group="Auth" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-touch-id/android/android-react-native-touch-id.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-touch-id/android/android-react-native-touch-id.iml" group="Auth/react-native-touch-id" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Auth/app" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/@react-native-community/async-storage/android/react-native-community_async-storage.iml" filepath="$PROJECT_DIR$/../node_modules/@react-native-community/async-storage/android/react-native-community_async-storage.iml" group="Auth/react-native-community_async-storage" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/@react-native-community/masked-view/android/react-native-community_masked-view.iml" filepath="$PROJECT_DIR$/../node_modules/@react-native-community/masked-view/android/react-native-community_masked-view.iml" group="Auth/react-native-community_masked-view" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-fingerprint-scanner/android/react-native-fingerprint-scanner.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-fingerprint-scanner/android/react-native-fingerprint-scanner.iml" group="Auth/react-native-fingerprint-scanner" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-gesture-handler/android/react-native-gesture-handler.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-gesture-handler/android/react-native-gesture-handler.iml" group="Auth/react-native-gesture-handler" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-keychain/android/react-native-keychain.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-keychain/android/react-native-keychain.iml" group="Auth/react-native-keychain" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-reanimated/android/react-native-reanimated.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-reanimated/android/react-native-reanimated.iml" group="Auth/react-native-reanimated" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-safe-area-context/android/react-native-safe-area-context.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-safe-area-context/android/react-native-safe-area-context.iml" group="Auth/react-native-safe-area-context" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-screens/android/react-native-screens.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-screens/android/react-native-screens.iml" group="Auth/react-native-screens" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-touch-id/android/react-native-touch-id.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-touch-id/android/react-native-touch-id.iml" group="Auth/react-native-touch-id" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-vector-icons/android/react-native-vector-icons.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-vector-icons/android/react-native-vector-icons.iml" group="Auth/react-native-vector-icons" />
+    </modules>
+  </component>
+</project>
